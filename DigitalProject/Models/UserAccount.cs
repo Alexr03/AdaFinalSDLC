@@ -23,9 +23,9 @@ namespace DigitalProject.Models
 
         public int Points;
 
-        public static void CreateUserAccount(UserAccount account)
+        public static int CreateUserAccount(UserAccount account)
         {
-            DatabaseManager.QueryFactory.Query("Users").Insert(new
+            return DatabaseManager.QueryFactory.Query("Users").InsertGetId<int>(new
             {
                 Firstname = account.FirstName,
                 Lastname = account.LastName,
