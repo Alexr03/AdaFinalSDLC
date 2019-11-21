@@ -12,13 +12,19 @@ namespace DigitalProject.Forms
             this.apprenticeship = apprenticeship;
             InitializeComponent();
             this.AutoSize = true;
+            SetText();
+        }
+
+        private void SetText()
+        {
             this.Text = $"{apprenticeship.AppName} - {apprenticeship.Company}";
             titleLabel.Text = $"{apprenticeship.AppName} - {apprenticeship.Company}";
             companyLabel.Text = "Company: " + apprenticeship.Company;
             levelLabel.Text = "Level: " + apprenticeship.AppLevel;
             requirementsLabel.Text = "Requirements: " + apprenticeship.Requirements;
             qrCode.Value = apprenticeship.Link;
-            successBarcode.Value = apprenticeship.Success ?? $"https://lmgtfy.com/?q={(apprenticeship.Company.Replace(" ", "+"))}+success+stories&iie=1";
+            successBarcode.Value = apprenticeship.Success ??
+                                   $"https://lmgtfy.com/?q={(apprenticeship.Company.Replace(" ", "+"))}+success+stories&iie=1";
         }
 
         private void VisitSiteButton_Click(object sender, System.EventArgs e)
