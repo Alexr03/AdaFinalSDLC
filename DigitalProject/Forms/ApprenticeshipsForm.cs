@@ -101,6 +101,7 @@ namespace DigitalProject.Forms
                         Text = category.CategoryName,
                         Title = category.CategoryName,
                         AutoSize = true,
+                        BackColor = Color.Transparent
                     };
 
                     RadGroupBox radGroupBox = new RadGroupBox()
@@ -109,12 +110,12 @@ namespace DigitalProject.Forms
                         Name = $"answers_{category.CategoryId}",
                         Location = new Point(25, 80),
                         Size = new Size(600, 250),
-                        ThemeName = "Crystal",
+                        ThemeName = "MaterialTeal",
                     };
 
                     RadLabel questionLabel = new RadLabel
                     {
-                        ThemeName = "Crystal",
+                        ThemeName = "MaterialTeal",
                         Name = $"q_{question.QuestionId}Label",
                         Text = $"{question.question}",
                         AutoSize = true,
@@ -130,8 +131,8 @@ namespace DigitalProject.Forms
                             Name = "answer_" + answer.AnswerId,
                             Text = answer.answer,
                             Tag = answer,
-                            Location = new Point(30, 85 + (20 * i)),
-                            ThemeName = "Crystal"
+                            Location = new Point(30, 85 + (25 * i)),
+                            ThemeName = "MaterialTeal"
                         });
                         i++;
                     }
@@ -142,7 +143,7 @@ namespace DigitalProject.Forms
                     RadButton detailsButton = new RadButton {
                         Text = "Details",
                         Location = new Point(450, 250),
-                        ThemeName = "Crystal"
+                        ThemeName = "MaterialTeal"
                     };
                     detailsButton.Click += delegate(object sender, EventArgs args)
                     {

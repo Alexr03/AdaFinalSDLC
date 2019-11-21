@@ -33,6 +33,7 @@
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.logoPanel = new Telerik.WinControls.UI.RadPanel();
             this.crystalTheme1 = new Telerik.WinControls.Themes.CrystalTheme();
+            this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
             ((System.ComponentModel.ISupportInitialize)(this.loginButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.registerButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
@@ -44,20 +45,20 @@
             // 
             this.loginButton.Location = new System.Drawing.Point(135, 227);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(205, 30);
+            this.loginButton.Size = new System.Drawing.Size(205, 36);
             this.loginButton.TabIndex = 0;
             this.loginButton.Text = "Login";
-            this.loginButton.ThemeName = "Crystal";
+            this.loginButton.ThemeName = "MaterialTeal";
             this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // registerButton
             // 
             this.registerButton.Location = new System.Drawing.Point(135, 284);
             this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(205, 30);
+            this.registerButton.Size = new System.Drawing.Size(205, 36);
             this.registerButton.TabIndex = 1;
             this.registerButton.Text = "Register";
-            this.registerButton.ThemeName = "Crystal";
+            this.registerButton.ThemeName = "MaterialTeal";
             this.registerButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // radLabel1
@@ -68,7 +69,7 @@
             this.radLabel1.Size = new System.Drawing.Size(462, 24);
             this.radLabel1.TabIndex = 2;
             this.radLabel1.Text = "Distrupt the status quo, rethink your future";
-            this.radLabel1.ThemeName = "Crystal";
+            this.radLabel1.ThemeName = "MaterialTeal";
             // 
             // logoPanel
             // 
@@ -76,18 +77,18 @@
             this.logoPanel.BackgroundImage = global::DigitalProject.Properties.Resources.image3;
             this.logoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logoPanel.ForeColor = System.Drawing.Color.Transparent;
-            this.logoPanel.Location = new System.Drawing.Point(12, 12);
+            this.logoPanel.Location = new System.Drawing.Point(-2, 0);
             this.logoPanel.Name = "logoPanel";
-            this.logoPanel.Size = new System.Drawing.Size(458, 125);
+            this.logoPanel.Size = new System.Drawing.Size(488, 137);
             this.logoPanel.TabIndex = 3;
-            this.logoPanel.ThemeName = "Crystal";
+            this.logoPanel.ThemeName = "MaterialTeal";
             // 
             // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(482, 358);
+            this.ClientSize = new System.Drawing.Size(486, 360);
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.radLabel1);
             this.Controls.Add(this.registerButton);
@@ -101,7 +102,7 @@
             this.RootElement.ApplyShapeToControl = true;
             this.ShowIcon = false;
             this.Text = "Welcome";
-            this.ThemeName = "Crystal";
+            this.ThemeName = "MaterialTeal";
             ((System.ComponentModel.ISupportInitialize)(this.loginButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.registerButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
@@ -119,5 +120,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadPanel logoPanel;
         private Telerik.WinControls.Themes.CrystalTheme crystalTheme1;
+        private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
     }
 }

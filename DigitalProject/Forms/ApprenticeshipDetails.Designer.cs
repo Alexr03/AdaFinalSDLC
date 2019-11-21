@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.Barcode.Symbology.QRCode qrCode1 = new Telerik.WinControls.UI.Barcode.Symbology.QRCode();
             Telerik.WinControls.UI.Barcode.Symbology.QRCode qrCode2 = new Telerik.WinControls.UI.Barcode.Symbology.QRCode();
+            Telerik.WinControls.UI.Barcode.Symbology.QRCode qrCode3 = new Telerik.WinControls.UI.Barcode.Symbology.QRCode();
             this.titleLabel = new Telerik.WinControls.UI.RadLabel();
             this.levelLabel = new Telerik.WinControls.UI.RadLabel();
             this.visitSiteButton = new Telerik.WinControls.UI.RadButton();
@@ -40,6 +40,7 @@
             this.successBarcode = new Telerik.WinControls.UI.RadBarcode();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
+            this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
             ((System.ComponentModel.ISupportInitialize)(this.titleLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.visitSiteButton)).BeginInit();
@@ -60,7 +61,7 @@
             this.titleLabel.Size = new System.Drawing.Size(76, 42);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Title";
-            this.titleLabel.ThemeName = "Crystal";
+            this.titleLabel.ThemeName = "MaterialTeal";
             // 
             // levelLabel
             // 
@@ -70,16 +71,16 @@
             this.levelLabel.Size = new System.Drawing.Size(55, 25);
             this.levelLabel.TabIndex = 1;
             this.levelLabel.Text = "Level";
-            this.levelLabel.ThemeName = "Crystal";
+            this.levelLabel.ThemeName = "MaterialTeal";
             // 
             // visitSiteButton
             // 
-            this.visitSiteButton.Location = new System.Drawing.Point(12, 327);
+            this.visitSiteButton.Location = new System.Drawing.Point(12, 318);
             this.visitSiteButton.Name = "visitSiteButton";
-            this.visitSiteButton.Size = new System.Drawing.Size(110, 24);
+            this.visitSiteButton.Size = new System.Drawing.Size(129, 36);
             this.visitSiteButton.TabIndex = 2;
             this.visitSiteButton.Text = "Visit Website";
-            this.visitSiteButton.ThemeName = "Crystal";
+            this.visitSiteButton.ThemeName = "MaterialTeal";
             this.visitSiteButton.Click += new System.EventHandler(this.VisitSiteButton_Click);
             // 
             // qrCode
@@ -88,11 +89,11 @@
             this.qrCode.Location = new System.Drawing.Point(321, 233);
             this.qrCode.Name = "qrCode";
             this.qrCode.Size = new System.Drawing.Size(125, 118);
-            qrCode1.Version = 1;
-            this.qrCode.Symbology = qrCode1;
+            qrCode2.Version = 1;
+            this.qrCode.Symbology = qrCode2;
             this.qrCode.TabIndex = 3;
             this.qrCode.Text = "radBarcode1";
-            this.qrCode.ThemeName = "Crystal";
+            this.qrCode.ThemeName = "MaterialTeal";
             this.qrCode.Value = "URL-HERE";
             // 
             // requirementsLabel
@@ -103,7 +104,7 @@
             this.requirementsLabel.Size = new System.Drawing.Size(129, 25);
             this.requirementsLabel.TabIndex = 2;
             this.requirementsLabel.Text = "Requirements";
-            this.requirementsLabel.ThemeName = "Crystal";
+            this.requirementsLabel.ThemeName = "MaterialTeal";
             // 
             // companyLabel
             // 
@@ -113,7 +114,7 @@
             this.companyLabel.Size = new System.Drawing.Size(91, 25);
             this.companyLabel.TabIndex = 3;
             this.companyLabel.Text = "Company";
-            this.companyLabel.ThemeName = "Crystal";
+            this.companyLabel.ThemeName = "MaterialTeal";
             // 
             // successBarcode
             // 
@@ -121,36 +122,36 @@
             this.successBarcode.Location = new System.Drawing.Point(190, 233);
             this.successBarcode.Name = "successBarcode";
             this.successBarcode.Size = new System.Drawing.Size(125, 118);
-            qrCode2.Version = 1;
-            this.successBarcode.Symbology = qrCode2;
+            qrCode3.Version = 1;
+            this.successBarcode.Symbology = qrCode3;
             this.successBarcode.TabIndex = 4;
             this.successBarcode.Text = "successBarcode";
-            this.successBarcode.ThemeName = "Crystal";
+            this.successBarcode.ThemeName = "MaterialTeal";
             this.successBarcode.Value = "URL-HERE";
             // 
             // radLabel1
             // 
             this.radLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.radLabel1.Location = new System.Drawing.Point(190, 209);
+            this.radLabel1.Location = new System.Drawing.Point(201, 209);
             this.radLabel1.Name = "radLabel1";
-            this.radLabel1.Size = new System.Drawing.Size(105, 20);
+            this.radLabel1.Size = new System.Drawing.Size(111, 21);
             this.radLabel1.TabIndex = 5;
             this.radLabel1.Text = "Success Stories";
-            this.radLabel1.ThemeName = "Crystal";
+            this.radLabel1.ThemeName = "MaterialTeal";
             // 
             // radLabel2
             // 
             this.radLabel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.radLabel2.Location = new System.Drawing.Point(321, 209);
+            this.radLabel2.Location = new System.Drawing.Point(348, 209);
             this.radLabel2.Name = "radLabel2";
-            this.radLabel2.Size = new System.Drawing.Size(56, 20);
+            this.radLabel2.Size = new System.Drawing.Size(59, 21);
             this.radLabel2.TabIndex = 6;
             this.radLabel2.Text = "Website";
-            this.radLabel2.ThemeName = "Crystal";
+            this.radLabel2.ThemeName = "MaterialTeal";
             // 
             // ApprenticeshipDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 363);
             this.Controls.Add(this.radLabel2);
@@ -171,7 +172,7 @@
             this.RootElement.ApplyShapeToControl = true;
             this.ShowIcon = false;
             this.Text = "Apprenticeship Details";
-            this.ThemeName = "Crystal";
+            this.ThemeName = "MaterialTeal";
             ((System.ComponentModel.ISupportInitialize)(this.titleLabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.levelLabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.visitSiteButton)).EndInit();
@@ -199,5 +200,6 @@
         private Telerik.WinControls.UI.RadBarcode successBarcode;
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadLabel radLabel2;
+        private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
     }
 }

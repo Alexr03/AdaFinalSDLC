@@ -36,6 +36,7 @@
             this.lastNameBox = new Telerik.WinControls.UI.RadTextBox();
             this.registerButton = new Telerik.WinControls.UI.RadButton();
             this.birthdayBox = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.materialTealTheme1 = new Telerik.WinControls.Themes.MaterialTealTheme();
             ((System.ComponentModel.ISupportInitialize)(this.loginLabel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).BeginInit();
@@ -55,7 +56,7 @@
             this.loginLabel.Size = new System.Drawing.Size(110, 41);
             this.loginLabel.TabIndex = 6;
             this.loginLabel.Text = "Register";
-            this.loginLabel.ThemeName = "Crystal";
+            this.loginLabel.ThemeName = "MaterialTeal";
             // 
             // logoPanel
             // 
@@ -66,43 +67,43 @@
             this.logoPanel.Name = "logoPanel";
             this.logoPanel.Size = new System.Drawing.Size(337, 99);
             this.logoPanel.TabIndex = 5;
-            this.logoPanel.ThemeName = "Crystal";
+            this.logoPanel.ThemeName = "MaterialTeal";
             // 
             // usernameBox
             // 
             this.usernameBox.Location = new System.Drawing.Point(59, 154);
             this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(200, 28);
+            this.usernameBox.Size = new System.Drawing.Size(200, 36);
             this.usernameBox.TabIndex = 1;
             this.usernameBox.Text = "Username";
-            this.usernameBox.ThemeName = "Crystal";
+            this.usernameBox.ThemeName = "MaterialTeal";
             // 
             // passwordBox
             // 
             this.passwordBox.Location = new System.Drawing.Point(59, 184);
             this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(200, 28);
+            this.passwordBox.Size = new System.Drawing.Size(200, 36);
             this.passwordBox.TabIndex = 2;
             this.passwordBox.Text = "Password";
-            this.passwordBox.ThemeName = "Crystal";
+            this.passwordBox.ThemeName = "MaterialTeal";
             // 
             // firstNameBox
             // 
             this.firstNameBox.Location = new System.Drawing.Point(59, 214);
             this.firstNameBox.Name = "firstNameBox";
-            this.firstNameBox.Size = new System.Drawing.Size(200, 28);
+            this.firstNameBox.Size = new System.Drawing.Size(200, 36);
             this.firstNameBox.TabIndex = 3;
             this.firstNameBox.Text = "First Name";
-            this.firstNameBox.ThemeName = "Crystal";
+            this.firstNameBox.ThemeName = "MaterialTeal";
             // 
             // lastNameBox
             // 
             this.lastNameBox.Location = new System.Drawing.Point(59, 244);
             this.lastNameBox.Name = "lastNameBox";
-            this.lastNameBox.Size = new System.Drawing.Size(200, 28);
+            this.lastNameBox.Size = new System.Drawing.Size(200, 36);
             this.lastNameBox.TabIndex = 4;
             this.lastNameBox.Text = "Last Name";
-            this.lastNameBox.ThemeName = "Crystal";
+            this.lastNameBox.ThemeName = "MaterialTeal";
             // 
             // registerButton
             // 
@@ -113,7 +114,7 @@
             this.registerButton.Size = new System.Drawing.Size(200, 53);
             this.registerButton.TabIndex = 6;
             this.registerButton.Text = "Register";
-            this.registerButton.ThemeName = "Crystal";
+            this.registerButton.ThemeName = "MaterialTeal";
             this.registerButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // birthdayBox
@@ -121,11 +122,11 @@
             this.birthdayBox.CalendarSize = new System.Drawing.Size(290, 320);
             this.birthdayBox.Location = new System.Drawing.Point(59, 274);
             this.birthdayBox.Name = "birthdayBox";
-            this.birthdayBox.Size = new System.Drawing.Size(200, 28);
+            this.birthdayBox.Size = new System.Drawing.Size(200, 36);
             this.birthdayBox.TabIndex = 5;
             this.birthdayBox.TabStop = false;
             this.birthdayBox.Text = "01 January 2000";
-            this.birthdayBox.ThemeName = "Crystal";
+            this.birthdayBox.ThemeName = "MaterialTeal";
             this.birthdayBox.Value = new System.DateTime(2000, 1, 1, 19, 8, 0, 0);
             // 
             // RegisterForm
@@ -133,7 +134,7 @@
             this.AcceptButton = this.registerButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 386);
+            this.ClientSize = new System.Drawing.Size(336, 388);
             this.Controls.Add(this.loginLabel);
             this.Controls.Add(this.birthdayBox);
             this.Controls.Add(this.registerButton);
@@ -151,7 +152,7 @@
             this.RootElement.ApplyShapeToControl = true;
             this.ShowIcon = false;
             this.Text = "";
-            this.ThemeName = "Crystal";
+            this.ThemeName = "MaterialTeal";
             ((System.ComponentModel.ISupportInitialize)(this.loginLabel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPanel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).EndInit();
@@ -176,5 +177,6 @@
         private Telerik.WinControls.UI.RadTextBox lastNameBox;
         private Telerik.WinControls.UI.RadButton registerButton;
         private Telerik.WinControls.UI.RadDateTimePicker birthdayBox;
+        private Telerik.WinControls.Themes.MaterialTealTheme materialTealTheme1;
     }
 }
